@@ -5,7 +5,7 @@
     :freeMode="true"
     :modules="modules"
     :grabCursor="true"
-    autoplay
+    :autoplay="true"
     class="mySwiper"
   >
     <swiper-slide
@@ -22,14 +22,15 @@
 </template>
 
 <script setup>
-import { defineComponent } from "vue";
-
 defineOptions({
   name: "simpleSlider",
 });
 
-// Import Swiper Vue.js components
+import { defineComponent } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { FreeMode } from "swiper/modules";
+
+// Import Swiper Vue.js components
 
 defineComponent({
   Swiper,
@@ -42,9 +43,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 // import required modules
-import { FreeMode, autoplay } from "swiper/modules";
 
-const modules = [FreeMode, autoplay];
+const modules = [FreeMode];
 
 import chartIcon from "../assets/icons/chart.svg";
 import imgIcon from "../assets/icons/img.svg";

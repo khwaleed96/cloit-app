@@ -58,10 +58,10 @@
             enter-active-class="animated fadeInUp faster delay-1s"
           >
             <custom-label class="stale big center">
-              <dir class="row justify-between items-center q-gutter-sm">
+              <div class="row justify-between items-center q-gutter-sm">
                 <img src="~assets/icons/dollar.svg" alt="" />
                 <span style="color: #00c696; font-size: 18px">월 100만원</span>
-              </dir>
+              </div>
             </custom-label>
           </transition>
         </div>
